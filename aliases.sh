@@ -22,7 +22,7 @@ alias l="ls -o -hX --group-directories-first"
 alias la="ls -o -AhX --group-directories-first"
 alias v="nvim"
 alias zh="nvim ~/.zsh_history"
-alias dot="cd ~/dotfiles-wsl"
+alias dot="cd ~/dotfiles-wsl-work"
 
 # Npm
 alias ni="npm install"
@@ -34,9 +34,6 @@ alias nrs="npm run start"
 alias nrb="npm run build"
 alias nrt="npm run test"
 alias nrc="npm run commit"
-
-# Yaourt/pacman
-alias yao="yaourt"
 
 # Tmux
 alias t="env TERM=xterm-256color tmux"
