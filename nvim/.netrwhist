@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/mnt/d/code/hack/react-ts-starter'
-let g:netrw_dirhist_2='/mnt/d/code/hack'
-let g:netrw_dirhist_3='/mnt/d/code'
-let g:netrw_dirhist_4='/mnt/d/code/hack/react-ts-starter'
-let g:netrw_dirhist_5='/mnt/d/code/hack'
-let g:netrw_dirhist_6='/mnt/d/code'
-let g:netrw_dirhist_7='/home/hub/dotfiles-wsl'
