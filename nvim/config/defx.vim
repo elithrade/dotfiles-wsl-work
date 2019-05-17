@@ -1,4 +1,4 @@
-nnoremap <silent> <localleader>e :Defx<CR>
+nnoremap <silent> <localleader>e :Defx `expand('%:p:h')` -search=`expand('%:p')`Defx<CR>
 
 autocmd FileType defx call s:defx_my_settings()
 function! s:defx_my_settings() abort

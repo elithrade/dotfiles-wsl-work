@@ -49,3 +49,4 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 unsetopt BEEP
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export DISPLAY=localhost:0.0
