@@ -2,7 +2,6 @@ filetype off
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-" Plug 'rbong/vim-crystalline'
 Plug 'rbong/vim-flog'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
@@ -21,7 +20,6 @@ Plug 'simeji/winresizer'
 
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'sheerun/vim-polyglot'
-" Plug 'w0rp/ale'
 
 call plug#end()
 
