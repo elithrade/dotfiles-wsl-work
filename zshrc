@@ -50,3 +50,4 @@ unsetopt BEEP
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export DISPLAY=localhost:0.0
+export NODE_PATH=$NODE_PATH:`npm root -g`
