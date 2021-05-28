@@ -6,15 +6,14 @@ source ~/.history.zsh
 antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
 antigen bundle jump
-# antigen bundle vi-mode
+
+autoload -U promptinit; promptinit
+prompt pure
 
 # Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
 export KEYTIMEOUT=1
 
-# PURE_PROMPT_SYMBOL='→'
 PURE_PROMPT_SYMBOL='λ'
 
 export NVM_DIR="$HOME/.nvm"
@@ -30,9 +29,6 @@ antigen apply
 
 export GOPATH=$HOME/code/go
 export PATH=$PATH:$GOPATH/bin
-
-# Used by go-torch to create pprof graph
-PATH=$PATH:/opt/FlameGraph
 
 source ~/.aliases.sh
 
