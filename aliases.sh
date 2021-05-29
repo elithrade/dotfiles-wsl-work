@@ -13,6 +13,7 @@ alias gb="git branch"
 alias glrh="git ls-remote --heads"
 alias glo="git log --oneline"
 alias grhh="git reset --hard HEAD"
+alias grh="git reset --hard"
 alias gfo="git fetch origin"
 alias gcp="git cherry-pick $1"
 alias ga="git add $1"
@@ -48,3 +49,25 @@ alias ascpr="aws s3 cp --recursive"
 
 # go
 alias gosrc="cd $GOPATH/src"
+alias gose="cd $GOPATH/src/github.com/elithrade"
+alias gosg="cd $GOPATH/src/github.com"
+
+alias yi="yarn install"
+alias yas="yarn add -S"
+alias yad="yarn add -D"
+alias yag="yarn add global"
+alias ys="yarn start"
+alias yt="yarn test"
+alias yb="yarn build"
+
+# Other
+alias snip="maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i"
+
+# Dotnet
+alias d2="export MSBuildSDKsPath=/usr/share/dotnet/sdk/2.2.109/Sdks"
+alias dl="export MSBuildSDKsPath=/usr/share/dotnet/sdk/$(dotnet --version)/Sdks"
+alias dbs="dotnet build-server shutdown"
+alias db="dotnet build"
+alias dr="dotnet run"
+alias dv="dotnet --version"
+alias dls="dotnet --list-sdks"
