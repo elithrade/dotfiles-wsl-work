@@ -1,4 +1,24 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "javascript", "javascriptreact", "typescript", "typescriptreact", "json", "graphql"],
-  "prettier.tslintIntegration": true
+  "suggest.echodocSupport": true,
+  "diagnostic.errorSign": "✖",
+  "diagnostic.warningSign": "▲",
+  "diagnostic.infoSign": "ℹ",
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    }
+  },
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "Markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "graphql",
+    "json"
+  ]
 }
