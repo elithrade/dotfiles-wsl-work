@@ -7,6 +7,7 @@ antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle jump
+antigen bundle jeffreytse/zsh-vi-mode
 
 autoload -U promptinit; promptinit
 prompt pure
