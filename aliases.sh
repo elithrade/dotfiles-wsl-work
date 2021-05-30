@@ -71,3 +71,8 @@ alias db="dotnet build"
 alias dr="dotnet run"
 alias dv="dotnet --version"
 alias dls="dotnet --list-sdks"
+
+# Ubuntu package manager
+alias sau="sudo apt update"
+alias sauu="sudo apt upgrade"
+alias sai="sudo apt install"
