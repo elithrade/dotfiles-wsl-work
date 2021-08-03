@@ -9,6 +9,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle jump
 antigen bundle jeffreytse/zsh-vi-mode
 
+# pre prompt
+fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 
