@@ -18,7 +18,7 @@ let maplocalleader = "\\"
 
 set number
 set relativenumber
-set clipboard+=unnamedplus
+set clipboard=unnamedplus
 
 " Insert spaces when Tab is pressed
 set expandtab
