@@ -17,6 +17,8 @@ alias grh="git reset --hard"
 alias gfo="git fetch origin"
 alias gcp="git cherry-pick $1"
 alias ga="git add $1"
+alias gss="git stash save"
+alias gsp="git stash pop"
 
 # Files
 alias l="ls -o -hX --group-directories-first"
