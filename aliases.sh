@@ -19,6 +19,7 @@ alias gcp="git cherry-pick $1"
 alias ga="git add $1"
 alias gss="git stash save"
 alias gsp="git stash pop"
+alias gpof="git push origin $1 --force-with-lease"
 
 # Files
 alias l="ls -o -hX --group-directories-first"
