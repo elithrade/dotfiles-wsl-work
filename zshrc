@@ -1,15 +1,18 @@
 unsetopt BG_NICE
 
 source ~/antigen.zsh
-source ~/.history.zsh
 
 antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle jump
 antigen bundle jeffreytse/zsh-vi-mode
+antigen bundle zsh-users/zsh-syntax-highlighting
 
-# pre prompt
+antigen apply
+
+source ~/.history.zsh
+
+# pure prompt
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
@@ -21,15 +24,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export NODE_PATH=$NODE_PATH:`npm root -g`
+
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 export EDITOR=nvim
-
-antigen apply
-
-export GOPATH=$HOME/code/go
-export PATH=$PATH:$GOPATH/bin
 
 source ~/.aliases.sh
 
@@ -48,7 +48,6 @@ unsetopt BEEP
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
-export NODE_PATH=$NODE_PATH:`npm root -g`
 
 zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 
